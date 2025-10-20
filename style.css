@@ -1,0 +1,121 @@
+/* Google Fonts - Opcional para una mejor tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables de Color Globales */
+:root {
+    --primary-color: #007bff;
+    --bg-light: #f8f9fa;
+    --text-light: #212529;
+    --bg-dark: #1e2125; /* Un poco más suave que el de bootstrap */
+    --text-dark: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: 70px; /* Ajuste para la navbar fija */
+}
+
+/* Estilos para el modo oscuro */
+body.dark {
+    --bg-light: #2c3034;
+    --text-light: #f8f9fa;
+    --border-color: var(--primary-color);
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.dark .bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+body.dark .card {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+body.dark .navbar-light.bg-light {
+    background-color: var(--bg-dark) !important;
+    border-bottom: 1px solid #444;
+}
+
+body.dark .navbar-brand,
+body.dark .nav-link {
+    color: var(--text-dark) !important;
+}
+
+body.dark .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+body.dark i.text-dark {
+    color: var(--text-light) !important;
+}
+
+body.dark .form-control {
+    background-color: #3a3f44;
+    color: var(--text-dark);
+    border-color: #555;
+}
+
+body.dark .form-control::placeholder {
+    color: #aaa;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?q=80&w=2071&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+}
+
+/* Project Cards */
+.project-card {
+    border: 2px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: heartbeat 3s infinite ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused; /* Pausa la animación en hover */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* Experience Cards */
+.experience-card {
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-light);
+}
+
+/* Accesibilidad */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+}
