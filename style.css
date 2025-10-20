@@ -110,6 +110,17 @@ a:focus, button:focus, input:focus, textarea:focus {
     outline-offset: 2px;
 }
 
+/* Estilos para el carrusel en modo oscuro */
+body.dark .carousel-control-prev-icon,
+body.dark .carousel-control-next-icon {
+    filter: invert(1); /* Invierte los colores de los iconos del carrusel para que sean visibles en fondo oscuro */
+}
+
+body.dark .carousel-indicators [data-bs-target] {
+    background-color: #fff; /* Hace los indicadores del carrusel blancos en modo oscuro */
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     body {

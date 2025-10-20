@@ -84,37 +84,64 @@
         <section id="projects" class="py-5 bg-light">
             <div class="container">
                 <h2 class="text-center mb-5"><i class="fas fa-project-diagram me-2"></i>Nuestras Especialidades</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card h-100">
-                            <img src="https://images.unsplash.com/photo-1586773860414-72d24b612f46?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Medicina General">
-                            <div class="card-body">
-                                <h5 class="card-title">Medicina General</h5>
-                                <p class="card-text">Atención primaria integral para toda la familia, enfocada en la prevención y el diagnóstico temprano.</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
+                <div id="specialtyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#specialtyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#specialtyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#specialtyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-12 col-md-8 col-lg-6">
+                                    <div class="card project-card h-100">
+                                        <img src="https://images.unsplash.com/photo-1586773860414-72d24b612f46?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Medicina General">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Medicina General</h5>
+                                            <p class="card-text">Atención primaria integral para toda la familia, enfocada en la prevención y el diagnóstico temprano.</p>
+                                            <a href="#" class="btn btn-primary">Ver Más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-12 col-md-8 col-lg-6">
+                                    <div class="card project-card h-100">
+                                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Medicina Interna">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Medicina Interna</h5>
+                                            <p class="card-text">Diagnóstico y manejo de enfermedades complejas en adultos, desde condiciones crónicas hasta agudas.</p>
+                                            <a href="#" class="btn btn-primary">Ver Más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-12 col-md-8 col-lg-6">
+                                    <div class="card project-card h-100">
+                                        <img src="https://images.unsplash.com/photo-1530026405182-2823df39d31d?q=80&w=1974&auto=format&fit=crop" class="card-img-top" alt="Cardiología">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cardiología</h5>
+                                            <p class="card-text">Cuidado especializado del corazón y sistema circulatorio, con tecnología de punta para diagnóstico y tratamiento.</p>
+                                            <a href="#" class="btn btn-primary">Ver Más</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card h-100">
-                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Medicina Interna">
-                            <div class="card-body">
-                                <h5 class="card-title">Medicina Interna</h5>
-                                <p class="card-text">Diagnóstico y manejo de enfermedades complejas en adultos, desde condiciones crónicas hasta agudas.</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card h-100">
-                            <img src="https://images.unsplash.com/photo-1530026405182-2823df39d31d?q=80&w=1974&auto=format&fit=crop" class="card-img-top" alt="Cardiología">
-                            <div class="card-body">
-                                <h5 class="card-title">Cardiología</h5>
-                                <p class="card-text">Cuidado especializado del corazón y sistema circulatorio, con tecnología de punta para diagnóstico y tratamiento.</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#specialtyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#specialtyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
